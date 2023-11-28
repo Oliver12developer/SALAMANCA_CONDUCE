@@ -1,0 +1,567 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+/* colores de la empresa
+#f8f8f8
+#007aff */
+
+/* Secciones */
+.hero {
+
+    padding: 50px 20px; /* Ajusta el espaciado interno según sea necesario */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    background-color: #111;
+}
+
+.header {
+    background-color: #f8f8f8;
+    /* border-bottom: 1px solid #d1d1d1; */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007aff;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link {
+    color: #007aff !important;
+    margin-right: 15px;
+}
+
+/* Estilo para centrar verticalmente */
+.center-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.alternative-hero {
+    background-color: #111;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Contenido dentro de la sección hero */
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.cta-button.primary {
+    background-color: #fff;
+    color: #111;
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.cta-button:hover {
+    background-color: #007aff;
+}
+/* Estilo flotante para las imágenes */
+.floating-img {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Ajustes de tamaño para las imágenes y textos */
+.larger-img {
+    width: 120px; /* Tamaño de la imagen más grande */
+}
+
+.larger-text {
+    font-size: 1.3em; /* Tamaño de fuente más grande */
+}
+
+/* Definición de la animación "float" (sin cambios) */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* .features {
+    padding: 80px 0;
+} */
+
+/* Estilo para cada elemento de características
+.feature {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    /* background-color: #f8f9fa; Ajusta el color de fondo según tus necesidades
+    border-radius: 10px;
+}*/
+.floating-img {
+    animation: float 3s ease-in-out infinite; /* Agregamos la animación llamada "float" */
+}
+
+/* Definimos la animación "float" */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Comienza y termina en la posición original */
+    }
+    50% {
+        transform: translateY(-10px); /* Se mueve hacia arriba a la mitad de la animación */
+    }
+}
+.feature img {
+    width: 100px; /* Ajusta el tamaño según tus necesidades */
+    margin-bottom: 20px; /* Espacio adicional debajo de la imagen */
+}
+
+.feature-title {
+    color: #007aff;
+    font-size: 1.8em; /* Tamaño de fuente más grande */
+    margin-bottom: 10px; /* Espacio adicional debajo del título */
+}
+
+.feature-text {
+    font-size: 1.2em; /* Tamaño de fuente más grande */
+}
+
+
+.how-it-works,
+.contact,.login {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    height: 100vh; /* Tamaño de la pantalla */
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+/* Footer estilo iOS */
+.footer-ios {
+    background-color: #020202;
+    border-top: 1px solid #d1d1d1;
+    padding: 20px 0;
+    text-align: center;
+    color: #6c757d;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-section {
+    margin: 0 20px;
+    text-align: left;
+}
+
+.footer-section h4 {
+    color: #007aff;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #007aff;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+/* Botón de regreso */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+    border-radius: 50%; /* Hace que el botón sea redondo */
+    width: 50px; /* Asegura que el ancho sea igual a la altura para hacer un círculo */
+    height: 50px; /* Asegura que la altura sea igual al ancho para hacer un círculo */
+    cursor: pointer;
+    font-size: 18px; /* Aumenta el tamaño del texto */
+    display: none;
+    display: flex;
+    align-items: center; /* Centra el ícono verticalmente */
+    justify-content: center; /* Centra el ícono horizontalmente */
+}
+
+#back-to-top i {
+    font-size: 24px; /* Ajusta el tamaño del ícono */
+}
+
+#back-to-top span {
+    display: none;
+}
+
+#back-to-top:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para centrar vertical y horizontalmente */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilo para los iconos */
+.navbar-nav .icon {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Ajusta el margen entre los elementos */
+    color: #007aff; /* Ajusta el color según tus preferencias */
+}
+
+.navbar-nav .icon i {
+    font-size: 20px; /* Ajusta el tamaño del ícono según tus preferencias */
+}
+
+#ios-navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='%231060c4'%3e%3cpath stroke='rgba(0, 123, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+/* Estilos iOS para la imagen */
+.how-it-works img {
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 100%; /* Evitar que las imágenes se desborden */
+    height: auto; /* Hacer que la altura se ajuste automáticamente */
+}
+
+/* Estilos iOS para el contenedor de texto */
+.how-it-works .text-container {
+    position: relative;
+    height: 100%; /* Asegurar que el contenedor de texto tome toda la altura del contenedor */
+    max-width: 600px; /* Limitar el ancho del contenedor de texto para evitar desbordes en dispositivos pequeños */
+    margin: 0 auto; /* Centrar el contenedor de texto horizontalmente */
+}
+
+/* Estilos iOS para el título */
+.how-it-works h2 {
+    font-size: 36px; /* Tamaño de fuente aún más grande */
+    color: #007BFF; /* Color azul típico de iOS */
+}
+
+/* Estilos iOS para el párrafo */
+.how-it-works p {
+    font-size: 20px; /* Tamaño de fuente aún más grande */
+    color: #333; /* Color de texto oscuro */
+    text-align: center; /* Centrar horizontalmente */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    /* Ajustes para dispositivos más pequeños */
+    .how-it-works h2 {
+        font-size: 15px; /* Disminuir el tamaño del título para dispositivos más pequeños */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .how-it-works p {
+        font-size: 16px; /* Disminuir el tamaño del párrafo para dispositivos más pequeños */
+    }
+
+    /* .how-it-works img {
+        margin-top: 20px;
+    } */
+}
+
+
+/* Estilos iOS para las cards */
+.ios-card {
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px; /* Espacio entre las cards */
+}
+
+/* Estilos iOS para el título */
+.ios-card .card-title {
+    font-size: 24px; /* Tamaño de fuente para títulos */
+    color: #007BFF; /* Color azul típico de iOS */
+    margin-bottom: 10px; /* Espacio entre títulos y párrafos */
+}
+
+/* Estilos iOS para el párrafo */
+.ios-card .card-text {
+    font-size: 16px; /* Tamaño de fuente para párrafos */
+    color: #333; /* Color de texto oscuro */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .ios-card {
+        margin-bottom: 0; /* Eliminar espacio entre las cards en dispositivos más pequeños */
+    }
+}
+
+/* Estilos iOS para la sección "Nuestros valores como empresa" */
+.company-values .section-title {
+    font-size: 28px;
+    color: #007BFF;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilos iOS adicionales para la sección "Misión y Visión" */
+.mission-vision .ios-card {
+    padding: 20px;
+}
+
+.mission-vision .card-title {
+    font-size: 24px; /* Tamaño de fuente más grande */
+    color: #007BFF;
+    margin-bottom: 15px;
+}
+
+.mission-vision .card-text {
+    font-size: 20px; /* Tamaño de fuente más grande */
+    color: #333;
+}
+
+/* Estilos iOS para la imagen */
+.ios-image {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos iOS para el contenido a la derecha de la imagen */
+.content {
+    padding: 20px;
+}
+
+/* Estilos iOS para el título de la sección */
+/* .section-title {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 15px;
+} */
+
+/* Estilos iOS para la imagen de la sección de inicio de sesión */
+.ios-image {
+    border-radius: 15px;
+}
+
+/* Estilos iOS para el formulario de inicio de sesión */
+.ios-form {
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #ffffff; /* Puedes ajustar el color de fondo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos iOS para los campos de entrada */
+.ios-input {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+/* Estilos iOS para el botón */
+.ios-button {
+    border-radius: 10px;
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ios-button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón */
+}
+
+
+
+
+/* Estilos iOS para el formulario de cálculo de precio */
+.ios-form {
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #ffffff; /* Color de fondo del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos iOS para los campos de entrada en el formulario */
+.ios-input {
+    border-radius: 10px;
+}
+
+.section-margin {
+    margin-bottom: 80px; /* Espacio entre secciones */
+}
+
+@media (max-width: 767px) {
+    .section-margin {
+        margin-bottom: 180px; /* Espacio reducido en dispositivos pequeños */
+    }
+    .espacio-responsive{
+        margin-bottom: 500px;
+    }
+}
+
+.ios-widget {
+    background-color: #007AFF;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Estilos del título del widget */
+.ios-widget-title {
+    color: #FFFFFF; /* Texto en color blanco */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Estilos de la lista de beneficios */
+.ios-widget-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilos de cada ítem de la lista */
+.ios-widget-item {
+    color: #FFFFFF; /* Texto en color blanco */
+    margin-bottom: 8px;
+}
+
+
+
+.ios-widget {
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ios-widget h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.ios-widget ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ios-widget li {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos para el botón */
+.btn-primary {
+    background-color: #147EFB;
+    color: #FFF;
+}
+
+.btn-primary:hover {
+    background-color: #0c5fbf;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(20, 126, 251, 0.5);
+}
+
+/* Estilos para el modal iOS */
+.ios-modal {
+    background-color: #000;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el header del modal iOS */
+.ios-modal-header {
+    background-color: #147EFB;
+    color: #FFF;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Estilos para los campos y etiquetas del formulario iOS */
+.ios-input,
+.ios-label,
+.ios-select {
+    border-radius: 8px;
+}
+
+/* Estilos adicionales para el botón iOS */
+.ios-button {
+    background-color: #147EFB;
+    color: #FFF;
+}
+
+.ios-button:hover {
+    background-color: #0c5fbf;
+}
+
+.ios-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(20, 126, 251, 0.5);
+}
+
+.ios-label {
+    color: #FFF; /* Color blanco para las etiquetas */
+}
+
